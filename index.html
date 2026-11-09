@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Happy Birthday, Mi.Chee 🌺</title><meta name="theme-color" content="#241812">
+<!-- Optional fonts: add <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet"> (style.css already falls back to system fonts) -->
+<link rel="stylesheet" href="style.css"></head><body>
+<a class="skip" href="#intro">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="flower" viewBox="0 0 100 100"><g fill="currentColor"><ellipse cx="50" cy="27" rx="13" ry="23"/><ellipse cx="50" cy="27" rx="13" ry="23" transform="rotate(72 50 50)"/><ellipse cx="50" cy="27" rx="13" ry="23" transform="rotate(144 50 50)"/><ellipse cx="50" cy="27" rx="13" ry="23" transform="rotate(216 50 50)"/><ellipse cx="50" cy="27" rx="13" ry="23" transform="rotate(288 50 50)"/></g><circle cx="50" cy="50" r="7" fill="#241812" opacity=".45"/></symbol>
+<symbol id="leaf" viewBox="0 0 60 100"><path d="M30 98C4 70 4 30 30 2c26 28 26 68 0 96z" fill="currentColor"/></symbol></defs></svg>
+
+<nav class="nav" id="nav" aria-label="Sections"><a href="#intro">Her</a><a href="#moments">Moments</a><a href="#corner">Her corner</a><a href="#song">Her song</a><a href="#message">Message</a></nav>
+
+<header class="hero" id="top">
+ <div class="hero-bg" data-speed=".28"><img src="images/mi-11.webp" alt="Mitchell glancing to the side in a beam of soft light" fetchpriority="high"></div>
+ <div class="hero-shade"></div>
+ <svg class="fl f1" data-speed="-.14" viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg>
+ <svg class="fl f2" data-speed=".12" viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg>
+ <svg class="fl f3" data-speed="-.2" viewBox="0 0 60 100" aria-hidden="true"><use href="#leaf"/></svg>
+ <div class="hero-copy" data-speed="-.1">
+  <p class="label">A day worth celebrating</p>
+  <p class="tag">A little world of her own.</p>
+  <h1>MITCHELL</h1>
+  <p class="sub">Celebrating the quiet beauty of being unapologetically you.</p>
+ </div>
+ <a class="scroll" href="#intro" aria-label="Scroll to explore"><span>Scroll</span><i></i></a>
+</header>
+
+<main>
+<section class="sec intro" id="intro">
+ <div class="wrap narrow reveal"><h2>The beauty of being you</h2>
+ <p class="lead">Quiet by nature, observant by heart, and warm in ways that words may not always capture. A woman with a strong sense of self, a mind of her own, and a beautiful appreciation for peace.</p></div>
+ <div class="wrap qualities">
+  <article class="q reveal"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg><h3>Quiet.</h3><p>Not an absence of words, but a presence that never needs to announce itself.</p></article>
+  <article class="q reveal"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg><h3>Observant.</h3><p>She sees the small details and unspoken moods that others pass right by.</p></article>
+  <article class="q reveal"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg><h3>Warm-hearted.</h3><p>A warmth that is felt long before it is explained.</p></article>
+  <article class="q reveal"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg><h3>Strong sense of self.</h3><p>She knows who she is, and she never needs permission to be it.</p></article>
+  <article class="q reveal"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg><h3>A lover of peace.</h3><p>Calm is something she values, and something she quietly protects.</p></article>
+ </div>
+</section>
+
+<section class="sec moments" id="moments">
+ <div class="wrap narrow reveal"><h2>A collection of moments</h2><p class="lead">No dates. No particular order. Just frames worth keeping. Tap any photo to see it larger.</p></div>
+ <ol class="tl" id="timeline"></ol>
+</section>
+
+<section class="sec corner" id="corner">
+ <div class="wrap">
+  <h2 class="reveal">Her. Just as she is.</h2>
+  <div class="board">
+   <svg class="deco d1" viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg>
+   <svg class="deco d2" viewBox="0 0 60 100" aria-hidden="true"><use href="#leaf"/></svg>
+   <svg class="deco d3" viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg>
+   <p class="note n1 reveal"><b>WMB</b> Tape Girl 🌾</p>
+   <p class="note n2 reveal"><b>HER</b> 😚🎀</p>
+   <p class="note n3 reveal">Just staying true 😇</p>
+   <p class="note n4 reveal">Scorpio ♏</p>
+  </div>
+ </div>
+</section>
+
+<section class="sec song" id="song">
+ <div class="wrap player reveal">
+  <div class="vinyl" id="vinyl" aria-hidden="true"><div class="disc"><span>Mi.Chee</span></div></div>
+  <div class="pl-body">
+   <h2>A musical moment</h2>
+   <p class="track">The Older I Get</p><p class="artist">Alan Jackson</p>
+   <p class="small">Her favourite song. Press play whenever the moment feels right.</p>
+   <div class="ctrls"><button id="play" class="play" aria-label="Play">▶</button>
+    <input id="seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Song progress">
+    <span class="time"><span id="cur">0:00</span> / <span id="dur">0:00</span></span></div>
+   <p class="msg" id="audioMsg" role="status" aria-live="polite" hidden></p>
+   <!-- MUSIC: put your own mp3 at music/the-older-i-get.mp3 (or change the path here) -->
+   <audio id="audio" src="music/the-older-i-get.mp3" preload="metadata"></audio>
+  </div>
+ </div>
+</section>
+
+<section class="sec message" id="message">
+ <div class="wrap narrow">
+  <h2 class="reveal">To you, Mitchell.</h2>
+  <p class="lead reveal">A little something is waiting for you.</p>
+  <button class="env" id="env" aria-expanded="false" aria-controls="letter"><span class="flap"></span><span class="seal"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg></span><span class="hint">Tap to open</span></button>
+  <div class="letter-wrap" id="letter"><div class="letter">
+   <!-- BIRTHDAY TEXT: edit the message below -->
+   <p>Happy Birthday, Mitchell.</p>
+   <p>Some people fill a room with noise. You fill it with a certain calm, and it is the thing people remember.</p>
+   <p>You are quiet, but never absent. You notice things: the small details, the unspoken moods, the moments others hurry past. And you carry a warmth that doesn't need to announce itself. It is simply felt.</p>
+   <p>There is something rare in how clearly you know yourself. You have a mind of your own and a steady sense of who you are, and you have never needed to be louder, or different, to be worth knowing.</p>
+   <p>Your love for peace is a gift, too. It is a quiet reminder, to everyone around you, to slow down and breathe.</p>
+   <p>Today isn't about becoming anyone new. It's about celebrating exactly who you already are.</p>
+   <p class="wish">May the years ahead be gentle with your heart, generous with their blessings, and filled with reasons to smile. Keep being beautifully, unapologetically you.</p>
+  </div></div>
+ </div>
+</section>
+</main>
+
+<footer class="foot">
+ <p class="big reveal">Here's to another chapter of being wonderfully you.</p>
+ <p class="hb reveal">Happy Birthday, Mi.Chee. 🌺</p>
+ <button class="bloom" id="bloom" aria-expanded="false" aria-label="Tap the flower for a hidden note"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg></button>
+ <p class="secret" id="secret" hidden>Some of the loveliest things bloom quietly.</p>
+ <p class="sig">With warm wishes.</p>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+ <button class="lb-x" id="lbX" aria-label="Close">✕</button>
+ <button class="lb-n lb-p" id="lbP" aria-label="Previous photo">‹</button>
+ <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+ <button class="lb-n lb-nx" id="lbN" aria-label="Next photo">›</button>
+</div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+<script src="script.js"></script></body></html>
